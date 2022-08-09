@@ -45,3 +45,18 @@ SELECT columnOne, columnTwo FROM tableName;
 
 SELECT * FROM tableName;
 
+-- ANCHOR The ALTER TABLE command is used to change the structure of a table
+-- You can use this to add new columns to the table or remove columns from the table
+-- EXAMPLE adding a new column
+
+ALTER TABLE celebs ADD COLUMN instagram_handle DATE;
+SELECT * FROM celebs;
+
+
+-- ANCHOR The UPDATE command is used to update data in a table
+-- EXAMPLE 
+
+UPDATE celebs SET instagram_handle = '@instagram' WHERE id = 4;
+-- This will update the instagram_handle column in the celebs table where the id is 4
+
+
